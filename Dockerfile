@@ -1,5 +1,5 @@
 FROM index.docker.io/library/golang:latest
-WORKDIR /go/src/github.com/mvazquezc/reverse-words/
+WORKDIR /go/src/github.com/qtdemo1/reverse-words/
 COPY main.go .
 RUN go get github.com/gorilla/mux && go get github.com/prometheus/client_golang/prometheus/promhttp
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
